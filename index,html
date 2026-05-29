@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+
+</style>
+    <script>
+        function Mover(){
+         let vetor = [];
+         let vetoror=[];
+         var answ;
+         var xx = document.createElement("ul");
+       
+         document.getElementById("listas").appendChild(xx);
+         
+        for(var i=0;i<10;i++){
+        vetor[i]=document.getElementById(i+1).value;
+        }
+
+
+        for(var i=0;i<10;i++){
+        answ=0;
+        for(var j=0;j<10;j++){  
+        if(vetor[i]>vetor[j]){
+        answ=answ+1;
+        }
+       
+
+
+        }
+        vetoror[answ]=vetor[i];
+    }
+
+
+for(var i=0;i<10;i++){
+var x = document.createElement("li");
+x.innerHTML = vetoror[i];
+xx.appendChild(x);
+document.getElementById(i+1).value = null;  
+}
+       
+
+
+
+
+
+
+
+
+         
+
+
+
+
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+   
+    <div id="formulário" >
+       
+        <input type="text" id="1">
+        <br>
+        <input type="text" id="2">
+        <br>
+        <input type="text" id="3">
+        <br>
+        <input type="text" id="4">
+        <br>
+        <input type="text" id="5">
+        <br><input type="text" id="6">
+        <br><input type="text" id="7">
+        <br><input type="text" id="8">
+        <br><input type="text" id="9">
+        <br><input type="text" id="10">
+       
+        <button onclick="Mover()" id="butao">Mover</button>
+        <div id="listas"> <p> </p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
